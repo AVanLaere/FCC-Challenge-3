@@ -1,36 +1,38 @@
+
 <head>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <div class="container">
   <header id="header">
     <nav id="nav-bar">
       <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
         <a class="navbar-brand" href="#">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+          <img class="avatar" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1027&q=80" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="https://catwindowbed.com">Order</a>
+              <a class="nav-link" href="#order">Order</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#form">Email</a>
+              <a class="nav-link" href="#email">Email</a>
             </li>
             <li class="nav-item dropdown">
-              <img class="avatar" id="header-img" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/avanlaere" />
+              <img class="avatar" id="header-img" alt="avatar" src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Home</a>
-                <a class="dropdown-item" href="#">Order</a>
-                <a class="dropdown-item" href="#form">Email</a>
+                <a class="dropdown-item" href="#home">Home</a>
+                <a class="dropdown-item" href="#order">Order</a>
+                <a class="dropdown-item" href="#email">Email</a>
               </div>
             </li>
           </ul>
@@ -39,16 +41,39 @@
     </nav>
   </header>
   <body>
-    <h1>Cat Window Bed</h1>
-    <form id="form" action="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-      <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    <h1 id="home" >Cat Window Bed</h1>
+    <form id="form" class="form-inline d-flex justify-content-center m-2" action="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" method="get" name="email" >
+      <div class="form-group mb-2 mr-3">
+        <label for="email" class="mr-3" >Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" >
       </div>
-      <div class="col-auto">
-      <input type="submit" id="submit" class="btn btn-primary mb-2">
-    </div>
+      <div>
+        <input type="submit" id="submit" class="btn btn-primary mb-2">
+      </div>
     </form>
-    <div id="video-div"><iframe id="video" width="500" height="300" src="https://www.youtube.com/embed/c_IJNr-bItA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div id="video-div"><iframe id="video" width="600" height="400" src="https://www.youtube.com/embed/jJXwye6UC-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <h3 id="order" class="mt-2" ><a href="https://catwindowbed.com" class="btn btn-primary mb-2">Order Now</a></h3>
+    <div class="card">
+      <div class="card2">
+        <h2>Andy Van Laere</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/avanlaere" target="_blank">
+              <i class="fa fa-github-square fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/andy-van-laere/" target="_blank">
+              <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.freecodecamp.org/andy-van-laere" target="_blank">
+              <i class="fa fa-free-code-camp fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </div>
