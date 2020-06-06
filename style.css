@@ -1,32 +1,33 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #B8b8b8;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background: #b8b8b8;
+header {
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+  margin-top: 0px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
+.navbar-brand img {
   width: 40px;
   height: 40px;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .container {
+  margin-top: 60px;
   max-width: 700px;
   width: 100%;
   text-align: center;
   background-color: #e8e8e8;
+}
+
+iframe {
+  width: 600px;
+  height: 400px;
 }
 
 .card {
@@ -35,8 +36,8 @@ body {
   text-align: center;
   width: 100%;
   max-width: 700px;
-
 }
+
 .card2{
   background-color: white;
   padding: 20px;
